@@ -1,0 +1,73 @@
+@import "../../App.scss";
+
+nav {
+    @include flexbox(row, center, center);
+    user-select: none;
+    height: 80px;
+
+    .favorites {
+        color: yellow;
+    }
+
+    form {
+        @include flexbox(row, space-between, center);
+
+        .tickets_list {
+            @include flexbox(row, none, center);
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        input[type="radio"] {
+            display: none;
+
+            &:checked+label {
+                background-color: $dimed;
+            }
+        }
+
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 8px;
+            border-radius: 10px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+
+    @media (min-width: 360px) {
+        width: 360px;
+
+        .tickets_list {
+            max-width: 230px;
+        }
+
+        label {
+            margin-left: 3px;
+            margin-right: 3px;
+            min-width: 50px;
+        }
+    }
+
+    @media (min-width: 800px) {
+        width: 800px;
+
+        .tickets_list {
+            max-width: 600px;
+        }
+
+        label {
+            margin-left: 5px;
+            margin-right: 5px;
+            min-width: 70px;
+        }
+    }
+}

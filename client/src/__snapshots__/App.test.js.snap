@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App snapshot test it renders a snapshot 1`] = `
+<div
+  className="main"
+>
+  <nav>
+    <form>
+      <div
+        className="tickets_list"
+      />
+      <input
+        checked={false}
+        id="favorites"
+        name="rad"
+        onChange={[Function]}
+        type="radio"
+        value="favorites"
+      />
+      <label
+        className="favorites"
+        htmlFor="favorites"
+        onClick={[Function]}
+      >
+        ☆
+      </label>
+    </form>
+  </nav>
+  <div
+    className="tickers"
+  />
+</div>
+`;

@@ -1,5 +1,13 @@
-
 # React Test Task
+
+## Implemented features
+
+- application connect to the locally running service using Socket.io
+- application have navigation component with which user can choose current ticker to see or to see all favorite tickers
+- tickers showing in Tickers and Favorites components which contain one or more ticker component that present single ticker
+- information about tickers, current navigational choose and favorite tickers are containing in Redux store
+- visual part implemented using SCSS preprocessors and Chart.js for indicating ticker change and status
+- tests available for App component (snapshot), and function that used in Ticker component
 
 ## Requirements
 
@@ -94,3 +102,5 @@ The tickers we use:
 3. Modify content of the folder `server` - if you want to complete bonus tasks
 4. Commit and push your code to your repository
 5. Send us link to your repository
+
+

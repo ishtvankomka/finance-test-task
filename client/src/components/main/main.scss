@@ -1,0 +1,13 @@
+@import "../../App.scss";
+
+.main {
+    @include flexbox(column, none, center);
+
+    @media (min-width: 360px) {
+        width: 360px;
+    }
+
+    @media (min-width: 800px) {
+        width: 800px;
+    }
+}

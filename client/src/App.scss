@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+$white: #ffffff;
+$black: #191414;
+$dimed: #333333;
+
+@mixin flexbox($direction, $justify, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+    background-color: $black;
+    color: $white;
+    @include flexbox(column, none, center);
+}
